@@ -9,7 +9,7 @@ using Promotional_offers.Classes;
 
 namespace Promotional_offers.Classes
 {
-    public class Promotion : IPromotion
+    public class Promotion : IPromotion, ICloneable
     {
         // Характеристики класу Promotion
         public int ID { get; set; }
