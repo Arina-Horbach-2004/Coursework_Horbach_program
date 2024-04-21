@@ -5,7 +5,9 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Promotional_offers", "Promotional_offers\Promotional_offers.csproj", "{2F85FC38-3FDA-4D98-A9EB-5B0F859A6BC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromotionoffersTest", "PromotionoffersTest\PromotionoffersTest.csproj", "{28E858F3-53BC-4D86-A130-CFCE78E24E5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PromotionoffersTest", "PromotionoffersTest\PromotionoffersTest.csproj", "{28E858F3-53BC-4D86-A130-CFCE78E24E5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coursework_Horbach_program_ Form", "Coursework_Horbach_program_ Form\Coursework_Horbach_program_ Form.csproj", "{E939F6BA-2F17-4EAC-9295-F47E1DA4972D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{28E858F3-53BC-4D86-A130-CFCE78E24E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28E858F3-53BC-4D86-A130-CFCE78E24E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28E858F3-53BC-4D86-A130-CFCE78E24E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E939F6BA-2F17-4EAC-9295-F47E1DA4972D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E939F6BA-2F17-4EAC-9295-F47E1DA4972D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E939F6BA-2F17-4EAC-9295-F47E1DA4972D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E939F6BA-2F17-4EAC-9295-F47E1DA4972D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

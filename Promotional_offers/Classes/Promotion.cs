@@ -70,8 +70,12 @@ namespace Promotional_offers.Classes
             // Перевірка, чи існую промкод з таким самим ID
             if (promotionsList.Any(p => p.ID == id))
             {
-                Console.WriteLine("Помилка: Промокод з таким ID вже існує!");
-                return false;
+                throw new("Помилка: Промокод з таким ID вже існує!");
+            }
+            if (expiryDate < DateTime.Now)
+            {
+                throw new("Дата закінчення промокоду не може бути менше ніж сьогоднішня!");
+
             }
 
             // Створення ногово промокоду з переданими параметрами
