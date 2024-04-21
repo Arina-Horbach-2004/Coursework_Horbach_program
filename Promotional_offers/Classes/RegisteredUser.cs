@@ -21,6 +21,7 @@ namespace Promotional_offers.Classes
         }
 
         public static List<RegisteredUser> registeredUsers { get; } = new List<RegisteredUser>();
+        public static List<string> usedPromoCodes = new List<string>();
 
         public RegisteredUser(string email, string password)
         {
@@ -62,12 +63,10 @@ namespace Promotional_offers.Classes
 
         }
 
-        // Використання промокоду
-        public bool UsePromotionCode(string promoCode, List<string> usedPromoCodes)
+        public bool UsePromotionCode(string promoCode)
         {
             if (usedPromoCodes.Contains(promoCode))
             {
-                // Промокод вже використовувався, виводимо сповіщення та повертаємо false
                 Console.WriteLine("Цей промокод вже був використаний раніше.");
                 return false;
             }

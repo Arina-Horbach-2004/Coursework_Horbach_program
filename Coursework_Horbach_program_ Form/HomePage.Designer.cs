@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            головнаToolStripMenuItem = new ToolStripMenuItem();
-            акціїToolStripMenuItem = new ToolStripMenuItem();
-            пошукToolStripMenuItem = new ToolStripMenuItem();
+            homepageToolStripMenuItem = new ToolStripMenuItem();
+            acctionToolStripMenuItem = new ToolStripMenuItem();
+            searchToolStripMenuItem = new ToolStripMenuItem();
             button_log_exit = new Button();
             panel_acction = new Panel();
             menuStrip1.SuspendLayout();
@@ -40,40 +40,40 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { головнаToolStripMenuItem, акціїToolStripMenuItem, пошукToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { homepageToolStripMenuItem, acctionToolStripMenuItem, searchToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // головнаToolStripMenuItem
+            // homepageToolStripMenuItem
             // 
-            головнаToolStripMenuItem.Font = new Font("Times New Roman", 10.8F);
-            головнаToolStripMenuItem.Name = "головнаToolStripMenuItem";
-            головнаToolStripMenuItem.Size = new Size(85, 24);
-            головнаToolStripMenuItem.Text = "Головна";
+            homepageToolStripMenuItem.Font = new Font("Times New Roman", 10.8F);
+            homepageToolStripMenuItem.Name = "homepageToolStripMenuItem";
+            homepageToolStripMenuItem.Size = new Size(85, 24);
+            homepageToolStripMenuItem.Text = "Головна";
             // 
-            // акціїToolStripMenuItem
+            // acctionToolStripMenuItem
             // 
-            акціїToolStripMenuItem.Font = new Font("Times New Roman", 10.8F);
-            акціїToolStripMenuItem.Name = "акціїToolStripMenuItem";
-            акціїToolStripMenuItem.Size = new Size(62, 24);
-            акціїToolStripMenuItem.Text = "Акції";
+            acctionToolStripMenuItem.Font = new Font("Times New Roman", 10.8F);
+            acctionToolStripMenuItem.Name = "acctionToolStripMenuItem";
+            acctionToolStripMenuItem.Size = new Size(62, 24);
+            acctionToolStripMenuItem.Text = "Акції";
             // 
-            // пошукToolStripMenuItem
+            // searchToolStripMenuItem
             // 
-            пошукToolStripMenuItem.Font = new Font("Times New Roman", 10.8F);
-            пошукToolStripMenuItem.Name = "пошукToolStripMenuItem";
-            пошукToolStripMenuItem.Size = new Size(77, 24);
-            пошукToolStripMenuItem.Text = "Пошук";
+            searchToolStripMenuItem.Font = new Font("Times New Roman", 10.8F);
+            searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            searchToolStripMenuItem.Size = new Size(77, 24);
+            searchToolStripMenuItem.Text = "Пошук";
             // 
             // button_log_exit
             // 
             button_log_exit.Font = new Font("Times New Roman", 10.8F);
-            button_log_exit.Location = new Point(590, 0);
+            button_log_exit.Location = new Point(578, 0);
             button_log_exit.Name = "button_log_exit";
-            button_log_exit.Size = new Size(185, 28);
+            button_log_exit.Size = new Size(197, 28);
             button_log_exit.TabIndex = 1;
             button_log_exit.Text = "Реєстрація/авторизація";
             button_log_exit.UseVisualStyleBackColor = true;
@@ -107,9 +107,9 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem головнаToolStripMenuItem;
-        private ToolStripMenuItem акціїToolStripMenuItem;
-        private ToolStripMenuItem пошукToolStripMenuItem;
+        private ToolStripMenuItem homepageToolStripMenuItem;
+        private ToolStripMenuItem acctionToolStripMenuItem;
+        private ToolStripMenuItem searchToolStripMenuItem;
         private Button button_log_exit;
         private Panel panel_acction;
     }
