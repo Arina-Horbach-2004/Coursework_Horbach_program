@@ -72,7 +72,6 @@
             searchToolStripMenuItem.Name = "searchToolStripMenuItem";
             searchToolStripMenuItem.Size = new Size(77, 24);
             searchToolStripMenuItem.Text = "Пошук";
-            searchToolStripMenuItem.Click += searchToolStripMenuItem_Click;
             // 
             // button_log_exit
             // 

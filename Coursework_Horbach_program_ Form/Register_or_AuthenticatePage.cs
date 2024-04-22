@@ -57,7 +57,7 @@ namespace Coursework_Horbach_program__Form
 
         private bool IsValidPassword(string password)
         {
-            return password.Length <= 10 && Regex.IsMatch(password, @"^[a-zA-Z]+$");
+            return password.Length <= 14 && Regex.IsMatch(password, @"^[a-zA-Z]+$");
         }
 
         private bool AuthenticateUser(string login, string password)
