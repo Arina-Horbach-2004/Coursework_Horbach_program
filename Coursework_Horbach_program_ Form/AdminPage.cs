@@ -25,7 +25,7 @@ namespace Coursework_Horbach_program__Form
 
         private void addpromotionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddPromotionPage add = new AddPromotionPage();
+            AddPromotionPage add = new AddPromotionPage(isAuthenticated);
             add.Show();
             this.Hide();
         }
