@@ -31,21 +31,17 @@ namespace Promotional_offers.Classes
         {
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
-                Console.WriteLine("Реєстрація не вдалася: Email або пароль порожні або складаються лише з пропусків.");
-                return false; // Якщо email або пароль порожні або складаються лише з пропусків, повертаємо false
+                throw new("Реєстрація не вдалася: Email або пароль порожні або складаються лише з пропусків.");
             }
 
             if (RegisteredUser.registeredUsers.Any(user => user.Email == email))
             {
-                Console.WriteLine("Реєстрація не вдалася: Користувач з такою адресою електронної пошти вже існує.");
-                return false; // Якщо користувач з такою адресою електронної пошти вже зареєстрований, повертаємо false
+                throw new("Реєстрація не вдалася: Користувач з такою адресою електронної пошти вже існує.");
             }
 
-            // Створюємо нового зареєстрованого користувача та додаємо його до списку зареєстрованих користувачів
-            var newUser = new RegisteredUser(email, password);
-            RegisteredUser.registeredUsers.Add(newUser);
-            Console.WriteLine("Реєстрація успішна.");
-            return true; // Реєстрація пройшла успішно, повертаємо true
+            // Додаємо нового гостя до списку зареєстрованих користувачів
+            var newGuest = new RegisteredUser(email, password);
+            return true;
         }
 
         // Пошук промокоду

@@ -81,6 +81,7 @@
             // 
             // panel_acction
             // 
+            panel_acction.AutoScroll = true;
             panel_acction.Location = new Point(0, 28);
             panel_acction.Name = "panel_acction";
             panel_acction.Size = new Size(800, 422);

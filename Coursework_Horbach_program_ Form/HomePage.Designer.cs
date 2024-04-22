@@ -60,6 +60,7 @@
             acctionToolStripMenuItem.Name = "acctionToolStripMenuItem";
             acctionToolStripMenuItem.Size = new Size(62, 24);
             acctionToolStripMenuItem.Text = "Акції";
+            acctionToolStripMenuItem.Click += acctionToolStripMenuItem_Click;
             // 
             // searchToolStripMenuItem
             // 
@@ -67,6 +68,7 @@
             searchToolStripMenuItem.Name = "searchToolStripMenuItem";
             searchToolStripMenuItem.Size = new Size(77, 24);
             searchToolStripMenuItem.Text = "Пошук";
+            searchToolStripMenuItem.Click += searchToolStripMenuItem_Click;
             // 
             // button_log_exit
             // 

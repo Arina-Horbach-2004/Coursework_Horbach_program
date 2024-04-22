@@ -139,5 +139,19 @@ namespace Coursework_Horbach_program__Form
             acctive.Show();
             this.Hide();
         }
+
+        private void acctionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AcctionPage acctionPage = new AcctionPage(login, password, isAuthenticated);
+            acctionPage.Show();
+            this.Hide();
+        }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SearchPromotionPage searchPromotionPage = new SearchPromotionPage(login, password, isAuthenticated);
+            searchPromotionPage.Show();
+            this.Hide();
+        }
     }
 }

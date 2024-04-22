@@ -114,6 +114,7 @@ namespace Coursework_Horbach_program__Form
             categories.Add("Книги");
             categories.Add("Фільми та серіали");
             categories.Add("Музика");
+            categories.Add("Косметика та догляд");
 
             comboBox_category.Items.Clear();
 

@@ -78,6 +78,7 @@
             pictureBox_photo.Location = new Point(461, 68);
             pictureBox_photo.Name = "pictureBox_photo";
             pictureBox_photo.Size = new Size(300, 141);
+            pictureBox_photo.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_photo.TabIndex = 42;
             pictureBox_photo.TabStop = false;
             // 
@@ -196,7 +197,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { addpromotionToolStripMenuItem, editpromotionToolStripMenuItem, deletepromotionToolStripMenuItem, файлToolStripMenuItem, отриматиСпискиToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 44;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -204,14 +205,14 @@
             // 
             addpromotionToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             addpromotionToolStripMenuItem.Name = "addpromotionToolStripMenuItem";
-            addpromotionToolStripMenuItem.Size = new Size(131, 24);
+            addpromotionToolStripMenuItem.Size = new Size(131, 20);
             addpromotionToolStripMenuItem.Text = "Додати пропозицію";
             // 
             // editpromotionToolStripMenuItem
             // 
             editpromotionToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             editpromotionToolStripMenuItem.Name = "editpromotionToolStripMenuItem";
-            editpromotionToolStripMenuItem.Size = new Size(152, 24);
+            editpromotionToolStripMenuItem.Size = new Size(152, 20);
             editpromotionToolStripMenuItem.Text = "Редагувати пропозицію";
             editpromotionToolStripMenuItem.Click += editpromotionToolStripMenuItem_Click;
             // 
@@ -219,7 +220,7 @@
             // 
             deletepromotionToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             deletepromotionToolStripMenuItem.Name = "deletepromotionToolStripMenuItem";
-            deletepromotionToolStripMenuItem.Size = new Size(143, 24);
+            deletepromotionToolStripMenuItem.Size = new Size(143, 20);
             deletepromotionToolStripMenuItem.Text = "Видалити пропозицію";
             deletepromotionToolStripMenuItem.Click += deletepromotionToolStripMenuItem_Click;
             // 
@@ -228,14 +229,14 @@
             файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { активніПромокодиToolStripMenuItem, видаленіПромокодиToolStripMenuItem });
             файлToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            файлToolStripMenuItem.Size = new Size(50, 24);
+            файлToolStripMenuItem.Size = new Size(50, 20);
             файлToolStripMenuItem.Text = "Файл";
             // 
             // активніПромокодиToolStripMenuItem
             // 
             активніПромокодиToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { зберегтиToolStripMenuItem, завантажитиToolStripMenuItem });
             активніПромокодиToolStripMenuItem.Name = "активніПромокодиToolStripMenuItem";
-            активніПромокодиToolStripMenuItem.Size = new Size(224, 26);
+            активніПромокодиToolStripMenuItem.Size = new Size(202, 26);
             активніПромокодиToolStripMenuItem.Text = "Активні промокоди";
             // 
             // зберегтиToolStripMenuItem
@@ -256,20 +257,20 @@
             // 
             видаленіПромокодиToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { зберегтиToolStripMenuItem1, завантажитиToolStripMenuItem1 });
             видаленіПромокодиToolStripMenuItem.Name = "видаленіПромокодиToolStripMenuItem";
-            видаленіПромокодиToolStripMenuItem.Size = new Size(224, 26);
+            видаленіПромокодиToolStripMenuItem.Size = new Size(202, 26);
             видаленіПромокодиToolStripMenuItem.Text = "Видалені промокоди";
             // 
             // зберегтиToolStripMenuItem1
             // 
             зберегтиToolStripMenuItem1.Name = "зберегтиToolStripMenuItem1";
-            зберегтиToolStripMenuItem1.Size = new Size(224, 26);
+            зберегтиToolStripMenuItem1.Size = new Size(159, 26);
             зберегтиToolStripMenuItem1.Text = "Зберегти";
             зберегтиToolStripMenuItem1.Click += зберегтиToolStripMenuItem1_Click;
             // 
             // завантажитиToolStripMenuItem1
             // 
             завантажитиToolStripMenuItem1.Name = "завантажитиToolStripMenuItem1";
-            завантажитиToolStripMenuItem1.Size = new Size(224, 26);
+            завантажитиToolStripMenuItem1.Size = new Size(159, 26);
             завантажитиToolStripMenuItem1.Text = "Завантажити";
             завантажитиToolStripMenuItem1.Click += завантажитиToolStripMenuItem1_Click;
             // 
@@ -277,7 +278,7 @@
             // 
             отриматиСпискиToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             отриматиСпискиToolStripMenuItem.Name = "отриматиСпискиToolStripMenuItem";
-            отриматиСпискиToolStripMenuItem.Size = new Size(121, 24);
+            отриматиСпискиToolStripMenuItem.Size = new Size(121, 20);
             отриматиСпискиToolStripMenuItem.Text = "Отримати списки ";
             отриматиСпискиToolStripMenuItem.Click += отриматиСпискиToolStripMenuItem_Click;
             // 

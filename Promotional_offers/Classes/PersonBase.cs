@@ -53,7 +53,7 @@ namespace Promotional_offers.Classes
             {
                 do
                 {
-                    if (!string.IsNullOrEmpty(value) && value.Length <= 10 && value.All(char.IsLetter))
+                    if (!string.IsNullOrEmpty(value) && value.Length <= 14 && value.All(char.IsLetter))
                     {
                         if (!usedPasswords.Contains(value))
                         {
@@ -80,7 +80,7 @@ namespace Promotional_offers.Classes
 
         public virtual string Get_Full_Info()
         {
-            return $"{Email} {Password}";
+            return $"Email: {Email}, Password: {Password}";
         }
     }
 }

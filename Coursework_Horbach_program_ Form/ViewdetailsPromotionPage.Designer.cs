@@ -167,6 +167,7 @@
             label_code.Size = new Size(117, 26);
             label_code.TabIndex = 9;
             label_code.Text = "Промокод:";
+            label_code.Visible = false;
             // 
             // textBox_category
             // 
@@ -185,6 +186,7 @@
             textBox_promocode.Name = "textBox_promocode";
             textBox_promocode.Size = new Size(181, 34);
             textBox_promocode.TabIndex = 11;
+            textBox_promocode.Visible = false;
             // 
             // button_use_promocode
             // 
