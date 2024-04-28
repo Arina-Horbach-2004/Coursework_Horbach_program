@@ -21,6 +21,7 @@ namespace Coursework_Horbach_program__Form
             InitializeComponent();
         }
 
+        // Метод для додавання фото, який викликається при натисканні кнопки "Додати фото"
         private void button_add_photo_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -41,6 +42,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод пошуку пропозиції за допомогою ID, що викликається при натисканні кнопки "Пошук"
         private void button_search_Click(object sender, EventArgs e)
         {
             int id;
@@ -92,6 +94,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод для очищення полів введення пропозиції
         private void ClearPromotionFields()
         {
             textBox_ID.Text = "";
@@ -103,6 +106,7 @@ namespace Coursework_Horbach_program__Form
             textBox_description.Text = "";
         }
 
+        // Метод, який викликається при завантаженні сторінки
         private void EditPromotionPage_Load(object sender, EventArgs e)
         {
             List<string> categories = new List<string>();
@@ -124,6 +128,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод збереження нових даних пропозиції, що викликається при натисканні кнопки "Зберегти зміни"
         private void button_save_Click(object sender, EventArgs e)
         {
             try
@@ -152,6 +157,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за перехід на сторінку додавання пропозиції
         private void addpromotionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddPromotionPage edit = new AddPromotionPage(isAuthenticated);
@@ -159,6 +165,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, який відповідає за перехід на сторінку видалення пропозиції
         private void deletepromotionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeletePromotionPage deletePromotionPage = new DeletePromotionPage();
@@ -166,6 +173,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, який відповідає за збереження активних промокодів в файл json
         private void зберегтиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -180,6 +188,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за завантаження активних промокодів з файлу json
         private void завантажитиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -193,6 +202,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за збереження видаленних промокодів в файл json
         private void зберегтиToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -207,6 +217,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за завантаження видалених промокодів з файлу json
         private void завантажитиToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -221,6 +232,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за перехід на сторінку отримання списків
         private void отриматиСпискиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FileManagePage fileManagePage = new FileManagePage();
@@ -228,6 +240,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод виходу з системи, який викликається при натисканні кнопки "Вийти"
         private void button_log_exit_Click(object sender, EventArgs e)
         {
             Register_or_AuthenticatePage register = new Register_or_AuthenticatePage(false);

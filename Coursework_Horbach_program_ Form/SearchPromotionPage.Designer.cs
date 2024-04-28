@@ -142,15 +142,15 @@
         }
 
         #endregion
-
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem homepageToolStripMenuItem;
-        private ToolStripMenuItem acctionToolStripMenuItem;
-        private ToolStripMenuItem searchToolStripMenuItem;
-        private Button button_log_exit;
-        private TextBox textBox_word;
-        private ComboBox comboBox_category;
-        private Button button_search;
-        private Panel panel_acction;
+                
+        private MenuStrip menuStrip1; // Меню для навігації по програмі        
+        private ToolStripMenuItem homepageToolStripMenuItem; // Пункт меню для переходу на домашню сторінку        
+        private ToolStripMenuItem acctionToolStripMenuItem; // Пункт меню для переходу на сторінка перегляду акцій     
+        private ToolStripMenuItem searchToolStripMenuItem; // Пункт меню для переходу на стопінку пошуку
+        private Button button_log_exit; // Кнопка для виходу з системи
+        private TextBox textBox_word;  // Поле для введення слова для пошуку
+        private ComboBox comboBox_category;  // Випадаючий список для вибору категорії пошуку
+        private Button button_search; // Кнопка для запуску функції пошуку
+        private Panel panel_acction; // Панель для відображення результата пошуку
     }
 }

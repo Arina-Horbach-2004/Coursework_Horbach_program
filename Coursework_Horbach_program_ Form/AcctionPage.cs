@@ -13,11 +13,12 @@ namespace Coursework_Horbach_program__Form
 {
     public partial class AcctionPage : Form
     {
-
+        // Поля для зберігання даних про користувача
         private string login;
         private string password;
         private bool isAuthenticated;
 
+        // Конструктор класу, який приймає дані про користувача
         public AcctionPage(string login, string password, bool isAuthenticated)
         {
             InitializeComponent();
@@ -26,6 +27,7 @@ namespace Coursework_Horbach_program__Form
             this.isAuthenticated = isAuthenticated;
         }
 
+        // Метод, який викликається при завантаженні сторінки
         private void AcctionPage_Load(object sender, EventArgs e)
         {
             if (isAuthenticated)
@@ -77,6 +79,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за перехід на сторінку перегляду деталей акції
         private void buttonGoToAction_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
@@ -86,6 +89,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, який відповідає за обробку події натискання кнопки "Вихід"
         private void button_log_exit_Click(object sender, EventArgs e)
         {
             Register_or_AuthenticatePage loginForm = new Register_or_AuthenticatePage(false);
@@ -93,6 +97,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, який відповідає за перехід на домашню сторінку
         private void homepageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (isAuthenticated)
@@ -109,6 +114,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за перехід на сторінку пошуку
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SearchPromotionPage searchpage = new SearchPromotionPage(login, password, false);

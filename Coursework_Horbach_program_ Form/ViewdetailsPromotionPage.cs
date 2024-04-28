@@ -18,7 +18,7 @@ namespace Coursework_Horbach_program__Form
         private string password;
         private bool isAuthenticated;
 
-
+        // Конструктор класу, який ініціалізує новий екземпляр сторінки перегляду деталей промокоду
         public ViewdetailsPromotionPage(int id, string shop, string category, string description, string photo, DateTime data, string code, string login, string password, bool isAuthenticated)
         {
             InitializeComponent();
@@ -47,9 +47,9 @@ namespace Coursework_Horbach_program__Form
         }
 
 
-
         private bool isPromoCodeGiven = false;
 
+        // Метод зміни тексту кнопки "Вийти" / "Реєстрація/авторизація", що викликається при завантаженні сторінки перегляду деталей промокоду
         private void ViewdetailsPromotionPage_Load(object sender, EventArgs e)
         {
             if (isAuthenticated)
@@ -62,6 +62,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод отримання промокоду, що викликається при натисканні кнопки "Отримати промокод"
         private void button_give_promocode_Click(object sender, EventArgs e)
         {
             if (isAuthenticated)
@@ -79,6 +80,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод використання промокоду, що викликається при натисканні кнопки "Використати промокод"
         private void button_use_promocode_Click(object sender, EventArgs e)
         {
             if (isAuthenticated)
@@ -112,6 +114,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, що відповідає за перехід на головну сторінку
         private void homepageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (isAuthenticated)
@@ -128,6 +131,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, що відповідає за перехід на сторінку з акціями
         private void acctionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AcctionPage acctionPage = new AcctionPage(login, password, isAuthenticated);
@@ -135,6 +139,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, що відповідає за перехід на сторінку пошуку акцій
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SearchPromotionPage searchpage = new SearchPromotionPage(login, password, false);
@@ -142,6 +147,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод виходу з системи, що відповідає за обробку події натискання кнопки "Вийти"
         private void button_log_exit_Click(object sender, EventArgs e)
         {
             Register_or_AuthenticatePage loginForm = new Register_or_AuthenticatePage(false);

@@ -227,23 +227,27 @@
 
         #endregion
 
+        // Верхнє меню
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem addpromotionToolStripMenuItem;
-        private ToolStripMenuItem editpromotionToolStripMenuItem;
-        private ToolStripMenuItem deletepromotionToolStripMenuItem;
-        private ToolStripMenuItem файлToolStripMenuItem;
-        private ToolStripMenuItem активніПромокодиToolStripMenuItem;
-        private ToolStripMenuItem зберегтиToolStripMenuItem;
-        private ToolStripMenuItem завантажитиToolStripMenuItem;
-        private ToolStripMenuItem видаленіПромокодиToolStripMenuItem;
-        private ToolStripMenuItem зберегтиToolStripMenuItem1;
-        private ToolStripMenuItem завантажитиToolStripMenuItem1;
-        private ToolStripMenuItem отриматиСпискиToolStripMenuItem;
-        private Button button_search;
-        private Button button_delete;
-        private ListBox listBox_acction_details;
-        private Label label_ID;
-        private TextBox textBox_ID;
-        private Button button_log_exit;
+        // Пункти меню для керування промокодами
+        private ToolStripMenuItem addpromotionToolStripMenuItem; // Додати промокод
+        private ToolStripMenuItem editpromotionToolStripMenuItem; // Редагувати промокод
+        private ToolStripMenuItem deletepromotionToolStripMenuItem; // Видалити промокод
+        // Пункти меню для керування файлами
+        private ToolStripMenuItem файлToolStripMenuItem; // Файл
+        private ToolStripMenuItem активніПромокодиToolStripMenuItem; // Активні промокоди
+        private ToolStripMenuItem зберегтиToolStripMenuItem; // Зберегти активні промокоди в файл формату json
+        private ToolStripMenuItem завантажитиToolStripMenuItem; // Завантажити активні промокоди в файл формату json
+        private ToolStripMenuItem видаленіПромокодиToolStripMenuItem; // Видалені промокоди
+        private ToolStripMenuItem зберегтиToolStripMenuItem1; // Зберегти видалені промокоди в файл формату json
+        private ToolStripMenuItem завантажитиToolStripMenuItem1; // Завантажити видалені промокоди в файл формату json
+        private ToolStripMenuItem отриматиСпискиToolStripMenuItem; // Отримати списки               
+        private Button button_search;// Кнопка пошуку
+        private Button button_delete; // Кнопка видалення
+        private ListBox listBox_acction_details; // Список для відображення деталей акцій
+        private Label label_ID;  // Мітка для поля ID
+        private TextBox textBox_ID; // Поле для введення ID    
+        private Button button_log_exit; // Кнопка виходу або входу в систему
+
     }
 }

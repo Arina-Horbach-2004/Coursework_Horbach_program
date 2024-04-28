@@ -17,6 +17,7 @@ namespace Coursework_Horbach_program__Form
             this.isAuthenticated = isAuthenticated;
         }
 
+        // Метод, що викликається при натисканні кнопки "Увійти" або "Зареєструватися"
         private void button_log_Click(object sender, EventArgs e)
         {
             login = textBox_login.Text;
@@ -48,6 +49,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод для перевірки коректності формату електронної пошти
         private bool IsValidEmail(string email)
         {
             string pattern = @"^[\w-]+(?:\.[\w-]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,7}$";
@@ -55,11 +57,13 @@ namespace Coursework_Horbach_program__Form
             return regex.IsMatch(email);
         }
 
+        // Метод для перевірки коректності формату пароля
         private bool IsValidPassword(string password)
         {
             return password.Length <= 14 && Regex.IsMatch(password, @"^[a-zA-Z]+$");
         }
 
+        // Метод для аутентифікації користувача/ адміністратора або регестрації
         private bool AuthenticateUser(string login, string password)
         {
             bool isAuthenticated = false;
@@ -112,6 +116,7 @@ namespace Coursework_Horbach_program__Form
             return isAuthenticated;
         }
 
+        // Метод, що відповідає за перехід на головну сторінку
         private void homepageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (isAuthenticated)
@@ -128,6 +133,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, що відповідає за перехід на сторінку з акціями
         private void acctionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AcctionPage acctionPage = new AcctionPage(login, password, isAuthenticated);
@@ -135,6 +141,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, що відповідає за перехід на сторінку пошуку акцій
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SearchPromotionPage searchpage = new SearchPromotionPage(login, password, false);
@@ -142,11 +149,13 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Обробник події, що викликається при зміні вибору режиму "Реєстрація"
         private void radioButton_register_CheckedChanged(object sender, EventArgs e)
         {
             label_title.Text = "Реєстрація";
         }
 
+        // Обробник події, що викликається при зміні вибору режиму "Автентифікація"
         private void radioButton_authenticate_CheckedChanged(object sender, EventArgs e)
         {
             label_title.Text = "Вхід";

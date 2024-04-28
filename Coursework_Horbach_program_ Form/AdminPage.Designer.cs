@@ -165,18 +165,21 @@
 
         #endregion
 
+        // Верхнє меню
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem addpromotionToolStripMenuItem;
-        private ToolStripMenuItem editpromotionToolStripMenuItem;
-        private ToolStripMenuItem deletepromotionToolStripMenuItem;
-        private ToolStripMenuItem файлToolStripMenuItem;
-        private ToolStripMenuItem активніПропозиціїToolStripMenuItem;
-        private ToolStripMenuItem зберегтиToolStripMenuItem;
-        private ToolStripMenuItem завантажитиToolStripMenuItem;
-        private ToolStripMenuItem видаленіПромокодиToolStripMenuItem;
-        private ToolStripMenuItem зберегтиToolStripMenuItem1;
-        private ToolStripMenuItem завантажитиToolStripMenuItem1;
-        private ToolStripMenuItem givelistToolStripMenuItem;
-        private Button button_log_exit;
+        // Пункти меню для керування промокодами
+        private ToolStripMenuItem addpromotionToolStripMenuItem; // Додати промокод
+        private ToolStripMenuItem editpromotionToolStripMenuItem; // Редагувати промокод
+        private ToolStripMenuItem deletepromotionToolStripMenuItem; // Видалити промокод
+        // Пункти меню для керування файлами
+        private ToolStripMenuItem файлToolStripMenuItem; // Файл
+        private ToolStripMenuItem активніПропозиціїToolStripMenuItem; // Активні пропозиції
+        private ToolStripMenuItem зберегтиToolStripMenuItem; // Зберегти активні промокоди в файл формату json
+        private ToolStripMenuItem завантажитиToolStripMenuItem; // Завантажити активні промокоди в файл формату json
+        private ToolStripMenuItem видаленіПромокодиToolStripMenuItem; // Видалені промокоди
+        private ToolStripMenuItem зберегтиToolStripMenuItem1; // Зберегти видалені промокоди в файл формату json
+        private ToolStripMenuItem завантажитиToolStripMenuItem1; // Завантажити видалені промокоди в файл формату json
+        private ToolStripMenuItem givelistToolStripMenuItem; // Отримати список
+        private Button button_log_exit; // Кнопка виходу або входу в систему
     }
 }

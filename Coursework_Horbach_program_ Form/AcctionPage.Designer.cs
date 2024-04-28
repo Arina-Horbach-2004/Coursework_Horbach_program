@@ -107,11 +107,14 @@
 
         #endregion
 
+        // Верхнє меню
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem homepageToolStripMenuItem;
-        private ToolStripMenuItem acctionToolStripMenuItem;
-        private ToolStripMenuItem searchToolStripMenuItem;
-        private Button button_log_exit;
-        private Panel panel_acction;
+        // Пункти меню
+        private ToolStripMenuItem homepageToolStripMenuItem; // Пункт меню для переходу на домашню сторінку  
+        private ToolStripMenuItem acctionToolStripMenuItem; // Пункт меню для переходу на сторінка перегляду акцій  
+        private ToolStripMenuItem searchToolStripMenuItem;  // Пункт меню для переходу на стопінку пошуку
+        private Button button_log_exit; // Кнопка виходу або входу в систему
+        private Panel panel_acction; // Панель для відображення акцій
+
     }
 }

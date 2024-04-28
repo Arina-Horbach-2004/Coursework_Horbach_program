@@ -13,7 +13,10 @@ namespace Coursework_Horbach_program__Form
 {
     public partial class AddPromotionPage : Form
     {
+        // Поле для визначення, чи користувач автентифікований
         private bool isAuthenticated;
+
+        // Конструктор класу, який ініціалізує новий екземпляр сторінки додавання пропозиції
         public AddPromotionPage(bool isAuthenticated)
         {
             InitializeComponent();
@@ -22,6 +25,7 @@ namespace Coursework_Horbach_program__Form
 
         private string selectedImagePath = "";
 
+        // Метод для додавання фото, який викликається при натисканні кнопки "Додати фото"
         private void button_add_photo_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -41,6 +45,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод збереження акції, який викликається при натисканні кнопки "Зберегти"
         private void button_save_Click(object sender, EventArgs e)
         {
             try
@@ -62,6 +67,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод для очищення полів введення пропозиції
         private void ClearPromotionFields()
         {
             textBox_ID.Text = "";
@@ -72,6 +78,7 @@ namespace Coursework_Horbach_program__Form
             pictureBox_photo.Image = null;
         }
 
+        // Метод, який викликається при завантаженні сторінки
         private void AddPromotionPage_Load(object sender, EventArgs e)
         {
             List<string> categories = new List<string>();
@@ -93,6 +100,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод клонування, який викликається при натисканні кнопки "Клонувати"
         private void button_clone_Click(object sender, EventArgs e)
         {
             int id = int.Parse(textBox_ID.Text);
@@ -144,11 +152,13 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод очищення, який викликається при натисканні кнопки "Очистити"
         private void button_clear_Click(object sender, EventArgs e)
         {
             ClearPromotionFields();
         }
 
+        // Метод виходу з системи, який викликається при натисканні кнопки "Вийти"
         private void button_log_exit_Click(object sender, EventArgs e)
         {
             Register_or_AuthenticatePage register = new Register_or_AuthenticatePage(false);
@@ -156,6 +166,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, який відповідає за перехід на сторінку редагування пропозиції
         private void editpromotionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             EditPromotionPage edit = new EditPromotionPage();
@@ -163,6 +174,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, який відповідає за перехід на сторінку видалення пропозиції
         private void deletepromotionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DeletePromotionPage deletePromotionPage = new DeletePromotionPage();
@@ -170,6 +182,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, який відповідає за збереження активних промокодів в файл json
         private void зберегтиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -184,6 +197,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за завантаження активних промокодів з файлу json
         private void завантажитиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -197,6 +211,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за збереження видаленних промокодів в файл json
         private void зберегтиToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -211,6 +226,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за завантаження видалених промокодів з файлу json
         private void завантажитиToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -225,6 +241,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, який відповідає за перехід на сторінку отримання списків
         private void отриматиСпискиToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FileManagePage fileManagePage = new FileManagePage();

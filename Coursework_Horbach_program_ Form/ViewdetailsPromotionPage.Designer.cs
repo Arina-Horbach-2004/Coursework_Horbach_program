@@ -254,23 +254,24 @@
 
         #endregion
 
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem homepageToolStripMenuItem;
-        private ToolStripMenuItem acctionToolStripMenuItem;
-        private ToolStripMenuItem searchToolStripMenuItem;
-        private PictureBox pictureBox_Photo;
-        private Label label_description;
-        private Label label_date;
-        private Label label_shop;
-        private TextBox textBox_description;
-        private TextBox textBox_shop;
-        private TextBox textBox_date;
-        private Label label_category;
-        private Label label_code;
-        private TextBox textBox_category;
-        private TextBox textBox_promocode;
-        private Button button_use_promocode;
-        private Button button_give_promocode;
-        private Button button_log_exit;
+        private MenuStrip menuStrip1;   // Меню для навігації по програмі
+        private ToolStripMenuItem homepageToolStripMenuItem; // Пункт меню для переходу на домашню сторінку
+        private ToolStripMenuItem acctionToolStripMenuItem; // Пункт меню для переходу на сторінка перегляду акцій
+        private ToolStripMenuItem searchToolStripMenuItem; // Пункт меню для  переходу на сторінку пошуку
+        private PictureBox pictureBox_Photo; // Відображення фотографії промокоду
+        private Label label_description; // Мітка для опису промокоду               
+        private Label label_date; // Мітка для відображення дати закінчення дії промокоду        
+        private Label label_shop; // Мітка для відображення магазину        
+        private TextBox textBox_description; // Поле для відображення опису промокоду        
+        private TextBox textBox_shop; // Поле для відображення назви магазину        
+        private TextBox textBox_date; // Поле для відображення дати закінчення дії промокоду        
+        private Label label_category; // Мітка для відображення категорії промокоду        
+        private Label label_code; // Мітка для відображення коду промокоду       
+        private TextBox textBox_category;  // Поле для відображення категорії промокоду       
+        private TextBox textBox_promocode; // Поле для відображення коду промокоду        
+        private Button button_use_promocode; // Кнопка для використання промокоду       
+        private Button button_give_promocode; // Кнопка для перегляду промокоду
+        private Button button_log_exit; // Кнопка виходу або входу в систему
+
     }
 }

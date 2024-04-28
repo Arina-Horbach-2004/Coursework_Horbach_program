@@ -63,7 +63,7 @@ namespace PromotionoffersTest
             var usedPromoCodes = new List<string>();
 
             // Act
-            bool result = user.UsePromotionCode("NEWCODE", usedPromoCodes);
+            bool result = user.UsePromotionCode("NEWCODE");
 
             // Assert
             Assert.IsTrue(result);
@@ -78,10 +78,11 @@ namespace PromotionoffersTest
             var usedPromoCodes = new List<string> { "USED1", "USED2" };
 
             // Act
-            bool result = user.UsePromotionCode("USED1", usedPromoCodes);
+            bool result = user.UsePromotionCode("USED1");
+            bool result_1 = user.UsePromotionCode("USED1");
 
             // Assert
-            Assert.IsFalse(result);
+            Assert.IsFalse(result_1);
         }
 
         // Тест на пошук акційних пропозицій за категорією

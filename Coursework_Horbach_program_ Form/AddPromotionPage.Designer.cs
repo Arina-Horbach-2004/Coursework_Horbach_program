@@ -362,35 +362,38 @@
 
         #endregion
 
-        private Button button_add_photo;
-        private PictureBox pictureBox_photo;
-        private DateTimePicker dateTimePicker_data;
-        private ComboBox comboBox_category;
-        private TextBox textBox_description;
-        private TextBox textBox_promocode;
-        private TextBox textBox_shop;
-        private TextBox textBox_ID;
-        private Label label_description;
-        private Label label_data;
-        private Label label_promocode;
-        private Label label_category;
-        private Label label_shop;
-        private Label label_ID;
+        private Button button_add_photo; // Кнопка для додавання фотографії
+        private PictureBox pictureBox_photo; // Елемент для відображення фотографії
+        private DateTimePicker dateTimePicker_data; // Елемент для вибору дати
+        private ComboBox comboBox_category; // Випадаючий список для вибору категорії        
+        private TextBox textBox_description; // Текстове поле для введення опису        
+        private TextBox textBox_promocode; // Текстове поле для введення промокоду        
+        private TextBox textBox_shop; // Текстове поле для введення назви магазину
+        private TextBox textBox_ID;  // Текстове поле для введення ID
+        private Label label_description; // Напис "Опис"
+        private Label label_data; // Напис "Дата"
+        private Label label_promocode; // Напис "Промокод"
+        private Label label_category; // Напис "Категорія"        
+        private Label label_shop; // Напис "Магазин"
+        private Label label_ID; // Напис "ID"
+        // Верхнє меню
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem addpromotionToolStripMenuItem;
-        private ToolStripMenuItem editpromotionToolStripMenuItem;
-        private ToolStripMenuItem deletepromotionToolStripMenuItem;
-        private ToolStripMenuItem файлToolStripMenuItem;
-        private ToolStripMenuItem отриматиСпискиToolStripMenuItem;
-        private ToolStripMenuItem активніПромокодиToolStripMenuItem;
-        private ToolStripMenuItem зберегтиToolStripMenuItem;
-        private ToolStripMenuItem завантажитиToolStripMenuItem;
-        private ToolStripMenuItem видаленіПромокодиToolStripMenuItem;
-        private ToolStripMenuItem зберегтиToolStripMenuItem1;
-        private ToolStripMenuItem завантажитиToolStripMenuItem1;
-        private Button button_log_exit;
-        private Button button_save;
-        private Button button_clear;
-        private Button button_clone;
+        // Пункти меню для керування промокодами
+        private ToolStripMenuItem addpromotionToolStripMenuItem; // Додати промокод
+        private ToolStripMenuItem editpromotionToolStripMenuItem; // Редагувати промокод
+        private ToolStripMenuItem deletepromotionToolStripMenuItem; // Видалити промокод
+        // Пункти меню для керування файлами
+        private ToolStripMenuItem файлToolStripMenuItem; // Файл
+        private ToolStripMenuItem отриматиСпискиToolStripMenuItem; // Отримати списки
+        private ToolStripMenuItem активніПромокодиToolStripMenuItem; // Активні промокоди
+        private ToolStripMenuItem зберегтиToolStripMenuItem; // Зберегти активні промокоди в файл формату json
+        private ToolStripMenuItem завантажитиToolStripMenuItem; // Завантажити активні промокоди в файл формату json
+        private ToolStripMenuItem видаленіПромокодиToolStripMenuItem; // Видалені промокоди
+        private ToolStripMenuItem зберегтиToolStripMenuItem1; // Зберегти видалені промокоди в файл формату json
+        private ToolStripMenuItem завантажитиToolStripMenuItem1; // Завантажити видалені промокоди в файл формату json
+        private Button button_log_exit; // Кнопка виходу або входу в систему
+        private Button button_save; // Кнопка для збереження
+        private Button button_clear; // Кнопка для очищення полів введення        
+        private Button button_clone; // Кнопка для клонування промокоду
     }
 }
