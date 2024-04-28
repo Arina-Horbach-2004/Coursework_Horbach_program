@@ -233,8 +233,8 @@ namespace PromotionoffersTest
             var user1 = new RegisteredUser("user1@example.com", "password");
             var user2 = new RegisteredUser("user2@example.com", "passwor");
 
-            string expectedUser1 = $"RegisterUser: {user1.Email} {user1.Password}";
-            string expectedUser2 = $"RegisterUser: {user2.Email} {user2.Password}";
+            string expectedUser1 = $"RegisterUser: Email: {user1.Email}, Password: {user2.Password}";
+            string expectedUser2 = $"RegisterUser: Email: {user2.Email}, Password: {user2.Password}";
             //string expected = $"{expectedUser1}{Environment.NewLine}{expectedUser2}";
 
             // Act

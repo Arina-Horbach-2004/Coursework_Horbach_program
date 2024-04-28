@@ -28,6 +28,7 @@ namespace Coursework_Horbach_program__Form
             this.isAuthenticated = isAuthenticated;
         }
 
+        // Метод пошуку акцій за категорією або ключовими словами, що викликається при натисканні кнопки "Пошук"
         private void button_search_Click(object sender, EventArgs e)
         {
             string category = comboBox_category.Text;
@@ -127,6 +128,7 @@ namespace Coursework_Horbach_program__Form
 
         }
 
+        // Метод для очищення полів для введення промокодів
         private void ClearPromotionFields()
         {
 
@@ -134,6 +136,7 @@ namespace Coursework_Horbach_program__Form
             textBox_word.Text = "";
         }
 
+        // Метод, що відповідає за обробку події натискання кнопки "До акції"
         private void buttonGoToAction_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
@@ -144,6 +147,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, що викликається при завантаженні сторінки пошуку промокодів
         private void SearchPromotionPage_Load(object sender, EventArgs e)
         {
             if (isAuthenticated)
@@ -173,6 +177,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, що відповідає за перехід на головну сторінку
         private void homepageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (isAuthenticated)
@@ -189,6 +194,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод, що відповідає за перехід на сторінку з акціями
         private void acctionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AcctionPage acctionPage = new AcctionPage(login, password, isAuthenticated);
@@ -196,6 +202,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод переходу на сторінку регестрації/ авторизиції, при  натисканні кнопки "Вийти"
         private void button_log_exit_Click(object sender, EventArgs e)
         {
             Register_or_AuthenticatePage loginForm = new Register_or_AuthenticatePage(false);

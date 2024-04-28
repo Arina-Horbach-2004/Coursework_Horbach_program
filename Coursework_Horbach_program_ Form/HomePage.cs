@@ -25,6 +25,7 @@ namespace Coursework_Horbach_program__Form
             this.isAuthenticated = isAuthenticated;
         }
 
+        // Метод отримання списку активних промокодів, який викликається при завантаженні головної сторінки
         private void HomePage_Load(object sender, EventArgs e)
         {
             if (isAuthenticated)
@@ -116,6 +117,7 @@ namespace Coursework_Horbach_program__Form
             }
         }
 
+        // Метод пеходу на сторінку перегляду деталей вибраної пропозиції, що викликається при натисканні кнопки переходу до конкретної акції
         private void buttonGoToAction_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
@@ -125,6 +127,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод переходу на сторінку всіх акцій, що викликається при натисканні кнопки переходу до всіх акцій
         private void buttonGoAllPromotion_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
@@ -133,6 +136,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод виходу з системи, який викликається при натисканні кнопки "Вийти"
         private void button_log_exit_Click(object sender, EventArgs e)
         {
             Register_or_AuthenticatePage acctive = new Register_or_AuthenticatePage(false);
@@ -140,6 +144,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, який відповідає за перехід на сторінку з усіма акціями
         private void acctionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AcctionPage acctionPage = new AcctionPage(login, password, isAuthenticated);
@@ -147,6 +152,7 @@ namespace Coursework_Horbach_program__Form
             this.Hide();
         }
 
+        // Метод, який відповідає за перехід на сторінку пошуку акцій
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SearchPromotionPage searchPromotionPage = new SearchPromotionPage(login, password, isAuthenticated);

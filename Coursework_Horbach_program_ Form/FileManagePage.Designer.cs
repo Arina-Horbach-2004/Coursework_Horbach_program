@@ -30,19 +30,19 @@
         {
             comboBox_list = new ComboBox();
             listBox_result = new ListBox();
-            button1 = new Button();
+            button_give = new Button();
             menuStrip1 = new MenuStrip();
             addpromotionToolStripMenuItem = new ToolStripMenuItem();
             editpromotionToolStripMenuItem = new ToolStripMenuItem();
             deletepromotionToolStripMenuItem = new ToolStripMenuItem();
             файлToolStripMenuItem = new ToolStripMenuItem();
-            активніПромокодиToolStripMenuItem = new ToolStripMenuItem();
-            зберегтиToolStripMenuItem = new ToolStripMenuItem();
-            завантадитиToolStripMenuItem = new ToolStripMenuItem();
-            видаленіПромокодиToolStripMenuItem = new ToolStripMenuItem();
-            зберегтиToolStripMenuItem1 = new ToolStripMenuItem();
-            завантадитиToolStripMenuItem1 = new ToolStripMenuItem();
-            отриматиСпискиToolStripMenuItem = new ToolStripMenuItem();
+            acctivepromoToolStripMenuItem = new ToolStripMenuItem();
+            saveacctivepromoToolStripMenuItem = new ToolStripMenuItem();
+            loadacctivepromoToolStripMenuItem = new ToolStripMenuItem();
+            deletepromoToolStripMenuItem = new ToolStripMenuItem();
+            savedeleteacctionToolStripMenuItem1 = new ToolStripMenuItem();
+            loaddeletacctionToolStripMenuItem1 = new ToolStripMenuItem();
+            givelistToolStripMenuItem = new ToolStripMenuItem();
             button_log_exit = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -65,21 +65,21 @@
             listBox_result.Size = new Size(776, 344);
             listBox_result.TabIndex = 1;
             // 
-            // button1
+            // button_give
             // 
-            button1.Font = new Font("Times New Roman", 9F);
-            button1.Location = new Point(632, 41);
-            button1.Name = "button1";
-            button1.Size = new Size(142, 25);
-            button1.TabIndex = 2;
-            button1.Text = "Отримати";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button_give.Font = new Font("Times New Roman", 9F);
+            button_give.Location = new Point(632, 41);
+            button_give.Name = "button_give";
+            button_give.Size = new Size(142, 25);
+            button_give.TabIndex = 2;
+            button_give.Text = "Отримати";
+            button_give.UseVisualStyleBackColor = true;
+            button_give.Click += button1_Click;
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { addpromotionToolStripMenuItem, editpromotionToolStripMenuItem, deletepromotionToolStripMenuItem, файлToolStripMenuItem, отриматиСпискиToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { addpromotionToolStripMenuItem, editpromotionToolStripMenuItem, deletepromotionToolStripMenuItem, файлToolStripMenuItem, givelistToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 28);
@@ -112,60 +112,60 @@
             // 
             // файлToolStripMenuItem
             // 
-            файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { активніПромокодиToolStripMenuItem, видаленіПромокодиToolStripMenuItem });
+            файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { acctivepromoToolStripMenuItem, deletepromoToolStripMenuItem });
             файлToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             файлToolStripMenuItem.Size = new Size(50, 24);
             файлToolStripMenuItem.Text = "Файл";
             // 
-            // активніПромокодиToolStripMenuItem
+            // acctivepromoToolStripMenuItem
             // 
-            активніПромокодиToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { зберегтиToolStripMenuItem, завантадитиToolStripMenuItem });
-            активніПромокодиToolStripMenuItem.Name = "активніПромокодиToolStripMenuItem";
-            активніПромокодиToolStripMenuItem.Size = new Size(224, 26);
-            активніПромокодиToolStripMenuItem.Text = "Активні промокоди";
+            acctivepromoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { saveacctivepromoToolStripMenuItem, loadacctivepromoToolStripMenuItem });
+            acctivepromoToolStripMenuItem.Name = "acctivepromoToolStripMenuItem";
+            acctivepromoToolStripMenuItem.Size = new Size(224, 26);
+            acctivepromoToolStripMenuItem.Text = "Активні промокоди";
             // 
-            // зберегтиToolStripMenuItem
+            // saveacctivepromoToolStripMenuItem
             // 
-            зберегтиToolStripMenuItem.Name = "зберегтиToolStripMenuItem";
-            зберегтиToolStripMenuItem.Size = new Size(159, 26);
-            зберегтиToolStripMenuItem.Text = "Зберегти";
-            зберегтиToolStripMenuItem.Click += зберегтиToolStripMenuItem_Click;
+            saveacctivepromoToolStripMenuItem.Name = "saveacctivepromoToolStripMenuItem";
+            saveacctivepromoToolStripMenuItem.Size = new Size(224, 26);
+            saveacctivepromoToolStripMenuItem.Text = "Зберегти";
+            saveacctivepromoToolStripMenuItem.Click += зберегтиToolStripMenuItem_Click;
             // 
-            // завантадитиToolStripMenuItem
+            // loadacctivepromoToolStripMenuItem
             // 
-            завантадитиToolStripMenuItem.Name = "завантадитиToolStripMenuItem";
-            завантадитиToolStripMenuItem.Size = new Size(159, 26);
-            завантадитиToolStripMenuItem.Text = "Завантажити";
-            завантадитиToolStripMenuItem.Click += завантажитиToolStripMenuItem_Click;
+            loadacctivepromoToolStripMenuItem.Name = "loadacctivepromoToolStripMenuItem";
+            loadacctivepromoToolStripMenuItem.Size = new Size(224, 26);
+            loadacctivepromoToolStripMenuItem.Text = "Завантажити";
+            loadacctivepromoToolStripMenuItem.Click += завантажитиToolStripMenuItem_Click;
             // 
-            // видаленіПромокодиToolStripMenuItem
+            // deletepromoToolStripMenuItem
             // 
-            видаленіПромокодиToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { зберегтиToolStripMenuItem1, завантадитиToolStripMenuItem1 });
-            видаленіПромокодиToolStripMenuItem.Name = "видаленіПромокодиToolStripMenuItem";
-            видаленіПромокодиToolStripMenuItem.Size = new Size(224, 26);
-            видаленіПромокодиToolStripMenuItem.Text = "Видалені промокоди";
+            deletepromoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { savedeleteacctionToolStripMenuItem1, loaddeletacctionToolStripMenuItem1 });
+            deletepromoToolStripMenuItem.Name = "deletepromoToolStripMenuItem";
+            deletepromoToolStripMenuItem.Size = new Size(224, 26);
+            deletepromoToolStripMenuItem.Text = "Видалені промокоди";
             // 
-            // зберегтиToolStripMenuItem1
+            // savedeleteacctionToolStripMenuItem1
             // 
-            зберегтиToolStripMenuItem1.Name = "зберегтиToolStripMenuItem1";
-            зберегтиToolStripMenuItem1.Size = new Size(224, 26);
-            зберегтиToolStripMenuItem1.Text = "Зберегти";
-            зберегтиToolStripMenuItem1.Click += зберегтиToolStripMenuItem1_Click;
+            savedeleteacctionToolStripMenuItem1.Name = "savedeleteacctionToolStripMenuItem1";
+            savedeleteacctionToolStripMenuItem1.Size = new Size(224, 26);
+            savedeleteacctionToolStripMenuItem1.Text = "Зберегти";
+            savedeleteacctionToolStripMenuItem1.Click += зберегтиToolStripMenuItem1_Click;
             // 
-            // завантадитиToolStripMenuItem1
+            // loaddeletacctionToolStripMenuItem1
             // 
-            завантадитиToolStripMenuItem1.Name = "завантадитиToolStripMenuItem1";
-            завантадитиToolStripMenuItem1.Size = new Size(224, 26);
-            завантадитиToolStripMenuItem1.Text = "Завантажити";
-            завантадитиToolStripMenuItem1.Click += завантадитиToolStripMenuItem1_Click;
+            loaddeletacctionToolStripMenuItem1.Name = "loaddeletacctionToolStripMenuItem1";
+            loaddeletacctionToolStripMenuItem1.Size = new Size(224, 26);
+            loaddeletacctionToolStripMenuItem1.Text = "Завантажити";
+            loaddeletacctionToolStripMenuItem1.Click += завантадитиToolStripMenuItem1_Click;
             // 
-            // отриматиСпискиToolStripMenuItem
+            // givelistToolStripMenuItem
             // 
-            отриматиСпискиToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
-            отриматиСпискиToolStripMenuItem.Name = "отриматиСпискиToolStripMenuItem";
-            отриматиСпискиToolStripMenuItem.Size = new Size(118, 24);
-            отриматиСпискиToolStripMenuItem.Text = "Отримати списки";
+            givelistToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
+            givelistToolStripMenuItem.Name = "givelistToolStripMenuItem";
+            givelistToolStripMenuItem.Size = new Size(118, 24);
+            givelistToolStripMenuItem.Text = "Отримати списки";
             // 
             // button_log_exit
             // 
@@ -184,7 +184,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button_log_exit);
-            Controls.Add(button1);
+            Controls.Add(button_give);
             Controls.Add(listBox_result);
             Controls.Add(comboBox_list);
             Controls.Add(menuStrip1);
@@ -199,21 +199,23 @@
 
         #endregion
 
-        private ComboBox comboBox_list;
-        private ListBox listBox_result;
-        private Button button1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem addpromotionToolStripMenuItem;
-        private ToolStripMenuItem editpromotionToolStripMenuItem;
-        private ToolStripMenuItem deletepromotionToolStripMenuItem;
-        private ToolStripMenuItem файлToolStripMenuItem;
-        private ToolStripMenuItem активніПромокодиToolStripMenuItem;
-        private ToolStripMenuItem зберегтиToolStripMenuItem;
-        private ToolStripMenuItem завантадитиToolStripMenuItem;
-        private ToolStripMenuItem видаленіПромокодиToolStripMenuItem;
-        private ToolStripMenuItem зберегтиToolStripMenuItem1;
-        private ToolStripMenuItem завантадитиToolStripMenuItem1;
-        private ToolStripMenuItem отриматиСпискиToolStripMenuItem;
-        private Button button_log_exit;
+        private ComboBox comboBox_list;// Випадаючий список для вибору типу списку 
+        private ListBox listBox_result; // Список для відображення результату
+        private Button button_give; // Кнопка для отримання списку
+        private MenuStrip menuStrip1; // Верхнє меню
+        // Пункти меню для керування промокодами
+        private ToolStripMenuItem addpromotionToolStripMenuItem; // Додати промокод
+        private ToolStripMenuItem editpromotionToolStripMenuItem; // Редагувати промокод
+        private ToolStripMenuItem deletepromotionToolStripMenuItem; // Видалити промокод
+        private ToolStripMenuItem файлToolStripMenuItem; // Пункт меню для роботи з файлами
+        private ToolStripMenuItem acctivepromoToolStripMenuItem; // Активні промокоди
+        private ToolStripMenuItem saveacctivepromoToolStripMenuItem; // Зберегти активні промокоди в файл формату json
+        private ToolStripMenuItem loadacctivepromoToolStripMenuItem; // Завантажити активні промокоди в файл формату json
+        private ToolStripMenuItem deletepromoToolStripMenuItem; // Видалені промокоди
+        private ToolStripMenuItem savedeleteacctionToolStripMenuItem1; // Зберегти видалені промокоди в файл формату json
+        private ToolStripMenuItem loaddeletacctionToolStripMenuItem1; // Завантажити видалені промокоди в файл формату json
+        private ToolStripMenuItem givelistToolStripMenuItem; // Отримати списки
+        private Button button_log_exit; // Кнопка виходу
+
     }
 }

@@ -183,17 +183,17 @@
 
         #endregion
 
-        private TextBox textBox_login;
-        private TextBox textBox_password;
-        private Button button_log;
-        private RadioButton radioButton_authenticate;
-        private RadioButton radioButton_register;
-        private Label label_login;
-        private Label label_password;
-        private Label label_title;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem homepageToolStripMenuItem;
-        private ToolStripMenuItem acctionToolStripMenuItem;
-        private ToolStripMenuItem searchToolStripMenuItem;
+        private TextBox textBox_login; // Поле для введення логіну        
+        private TextBox textBox_password; // Поле для введення паролю
+        private Button button_log; // Кнопка для входу або реєстрації користувача
+        private RadioButton radioButton_authenticate; // Перемикач для вибору методу аутентифікації
+        private RadioButton radioButton_register; // Перемикач для вибору методу реєстрації
+        private Label label_login; // Підпис для поля введення логіну
+        private Label label_password; // Підпис для поля введення паролю
+        private Label label_title;  // Підпис з заголовком форми
+        private MenuStrip menuStrip1; // Меню для навігації по програмі        
+        private ToolStripMenuItem homepageToolStripMenuItem; // Пункт меню для переходу на домашню сторінку        
+        private ToolStripMenuItem acctionToolStripMenuItem; // Пункт меню для доступу до функцій програми              
+        private ToolStripMenuItem searchToolStripMenuItem; // Пункт меню для запуску функції пошуку
     }
 }
