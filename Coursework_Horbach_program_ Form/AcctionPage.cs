@@ -59,6 +59,7 @@ namespace Coursework_Horbach_program__Form
 
                 labelDescription.Text = promotion.Description;
                 labelDescription.Location = new Point(203, labelDescriptionY);
+                labelDescription.AutoSize = true;
                 labelDescription.Width = 67;
                 labelDescription.Height = 26;
                 panel_acction.Controls.Add(labelDescription);

@@ -352,6 +352,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "EditPromotionPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "EditPromotionPage";
             Load += EditPromotionPage_Load;
             menuStrip1.ResumeLayout(false);

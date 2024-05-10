@@ -133,6 +133,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "SearchPromotionPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SearchPromotionPage";
             Load += SearchPromotionPage_Load;
             menuStrip1.ResumeLayout(false);
@@ -142,7 +143,7 @@
         }
 
         #endregion
-                
+
         private MenuStrip menuStrip1; // Меню для навігації по програмі        
         private ToolStripMenuItem homepageToolStripMenuItem; // Пункт меню для переходу на домашню сторінку        
         private ToolStripMenuItem acctionToolStripMenuItem; // Пункт меню для переходу на сторінка перегляду акцій     

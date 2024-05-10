@@ -174,6 +174,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Register_or_AuthenticatePage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Register or Authenticate Page";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

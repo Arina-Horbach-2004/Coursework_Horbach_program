@@ -97,6 +97,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "AcctionPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AcctionPage";
             Load += AcctionPage_Load;
             menuStrip1.ResumeLayout(false);

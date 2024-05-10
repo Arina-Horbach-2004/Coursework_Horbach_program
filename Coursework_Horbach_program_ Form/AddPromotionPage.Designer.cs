@@ -351,6 +351,7 @@
             Controls.Add(label_ID);
             Controls.Add(menuStrip1);
             Name = "AddPromotionPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AddPromotionPage";
             Load += AddPromotionPage_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox_photo).EndInit();

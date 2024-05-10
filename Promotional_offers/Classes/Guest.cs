@@ -31,12 +31,12 @@ namespace Promotional_offers.Classes
         {
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
-                throw new("Реєстрація не вдалася: Email або пароль порожні або складаються лише з пропусків.");
+                throw new Exception("Реєстрація не вдалася: Email або пароль порожні або складаються лише з пропусків.");
             }
 
             if (RegisteredUser.registeredUsers.Any(user => user.Email == email))
             {
-                throw new("Реєстрація не вдалася: Користувач з такою адресою електронної пошти вже існує.");
+                throw new Exception("Реєстрація не вдалася: Користувач з такою адресою електронної пошти вже існує.");
             }
 
             // Додаємо нового гостя до списку зареєстрованих користувачів
