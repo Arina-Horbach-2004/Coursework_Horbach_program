@@ -70,11 +70,11 @@ namespace Promotional_offers.Classes
             // Перевірка, чи існую промкод з таким самим ID
             if (promotionsList.Any(p => p.ID == id))
             {
-                throw new("Помилка: Промокод з таким ID вже існує!");
+                throw new Exception("Помилка: Промокод з таким ID вже існує!");
             }
             if (expiryDate < DateTime.Now)
             {
-                throw new("Дата закінчення промокоду не може бути менше ніж сьогоднішня!");
+                throw new Exception("Дата закінчення промокоду не може бути менше ніж сьогоднішня!");
 
             }
 

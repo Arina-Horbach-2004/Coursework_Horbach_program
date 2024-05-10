@@ -58,7 +58,7 @@ namespace Coursework_Horbach_program__Form
             var promotion = validPromotions.FirstOrDefault(p => p.ID == id);
             if (promotion == null)
             {
-                MessageBox.Show("Промокод с указанным ID не найден", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Промокод із зазначеним ID не знайдено", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

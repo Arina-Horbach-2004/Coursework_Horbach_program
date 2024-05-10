@@ -55,7 +55,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { addpromotionToolStripMenuItem, editpromotionToolStripMenuItem, deletepromotionToolStripMenuItem, файлToolStripMenuItem, отриматиСпискиToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -63,7 +63,7 @@
             // 
             addpromotionToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             addpromotionToolStripMenuItem.Name = "addpromotionToolStripMenuItem";
-            addpromotionToolStripMenuItem.Size = new Size(131, 24);
+            addpromotionToolStripMenuItem.Size = new Size(131, 20);
             addpromotionToolStripMenuItem.Text = "Додати пропозицію";
             addpromotionToolStripMenuItem.Click += addpromotionToolStripMenuItem_Click;
             // 
@@ -71,7 +71,7 @@
             // 
             editpromotionToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             editpromotionToolStripMenuItem.Name = "editpromotionToolStripMenuItem";
-            editpromotionToolStripMenuItem.Size = new Size(152, 24);
+            editpromotionToolStripMenuItem.Size = new Size(152, 20);
             editpromotionToolStripMenuItem.Text = "Редагувати пропозицію";
             editpromotionToolStripMenuItem.Click += editpromotionToolStripMenuItem_Click;
             // 
@@ -79,7 +79,7 @@
             // 
             deletepromotionToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             deletepromotionToolStripMenuItem.Name = "deletepromotionToolStripMenuItem";
-            deletepromotionToolStripMenuItem.Size = new Size(143, 24);
+            deletepromotionToolStripMenuItem.Size = new Size(143, 20);
             deletepromotionToolStripMenuItem.Text = "Видалити пропозицію";
             // 
             // файлToolStripMenuItem
@@ -87,7 +87,7 @@
             файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { активніПромокодиToolStripMenuItem, видаленіПромокодиToolStripMenuItem });
             файлToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            файлToolStripMenuItem.Size = new Size(50, 24);
+            файлToolStripMenuItem.Size = new Size(50, 20);
             файлToolStripMenuItem.Text = "Файл";
             // 
             // активніПромокодиToolStripMenuItem
@@ -136,7 +136,7 @@
             // 
             отриматиСпискиToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             отриматиСпискиToolStripMenuItem.Name = "отриматиСпискиToolStripMenuItem";
-            отриматиСпискиToolStripMenuItem.Size = new Size(118, 24);
+            отриматиСпискиToolStripMenuItem.Size = new Size(118, 20);
             отриматиСпискиToolStripMenuItem.Text = "Отримати списки";
             отриматиСпискиToolStripMenuItem.Click += отриматиСпискиToolStripMenuItem_Click;
             // 
@@ -171,6 +171,7 @@
             listBox_acction_details.ItemHeight = 17;
             listBox_acction_details.Location = new Point(34, 147);
             listBox_acction_details.Name = "listBox_acction_details";
+            listBox_acction_details.ScrollAlwaysVisible = true;
             listBox_acction_details.Size = new Size(736, 72);
             listBox_acction_details.TabIndex = 3;
             listBox_acction_details.Visible = false;
@@ -218,6 +219,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "DeletePromotionPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "DeletePromotionPage";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

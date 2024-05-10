@@ -73,13 +73,8 @@ namespace PromotionoffersTest
 
             // Create the first promotion
             Promotion.CreatePromotion(id, shop, category, code, expiryDate, photo, decription);
-
-            // Act
-            bool result = Promotion.CreatePromotion(id, shop, category, code, expiryDate, photo, decription);
-
-            // Assert
-            Assert.IsFalse(result);
-        }
+            Assert.ThrowsException<Exception>(() => Promotion.CreatePromotion(id, shop, category, code, expiryDate, photo, decription));
+    }
 
         // Перевірка успішного редагування існуючої промоакції
         [TestMethod]

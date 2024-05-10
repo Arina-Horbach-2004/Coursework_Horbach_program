@@ -38,11 +38,7 @@ namespace PromotionoffersTest
             string email = "";
             string password = "password";
 
-            // Act
-            bool result = guest.Register(email, password);
-
-            // Assert
-            Assert.IsFalse(result);
+            Assert.ThrowsException<Exception>(() => guest.Register(email, password));
         }
 
         // Тест на обробку випадку, коли спробуємо зареєструвати користувача з вже зареєстрованою електронною поштою
@@ -55,11 +51,7 @@ namespace PromotionoffersTest
             string password = "password";
             guest.Register(email, password); // Регистрируем пользователя
 
-            // Act
-            bool result = guest.Register(email, "anotherpassword"); // Пытаемся зарегистрировать пользователя с тем же email
-
-            // Assert
-            Assert.IsFalse(result);
+            Assert.ThrowsException<Exception>(() => guest.Register(email, password));
         }
 
         // Тест на перегляд існуючої акційної пропозиції

@@ -82,7 +82,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { addpromotionToolStripMenuItem, editpromotionToolStripMenuItem, deletepromotionToolStripMenuItem, файлToolStripMenuItem, givelistToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 3;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -90,7 +90,7 @@
             // 
             addpromotionToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             addpromotionToolStripMenuItem.Name = "addpromotionToolStripMenuItem";
-            addpromotionToolStripMenuItem.Size = new Size(131, 24);
+            addpromotionToolStripMenuItem.Size = new Size(131, 20);
             addpromotionToolStripMenuItem.Text = "Додати пропозицію";
             addpromotionToolStripMenuItem.Click += addpromotionToolStripMenuItem_Click;
             // 
@@ -98,7 +98,7 @@
             // 
             editpromotionToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             editpromotionToolStripMenuItem.Name = "editpromotionToolStripMenuItem";
-            editpromotionToolStripMenuItem.Size = new Size(152, 24);
+            editpromotionToolStripMenuItem.Size = new Size(152, 20);
             editpromotionToolStripMenuItem.Text = "Редагувати пропозицію";
             editpromotionToolStripMenuItem.Click += editpromotionToolStripMenuItem_Click;
             // 
@@ -106,7 +106,7 @@
             // 
             deletepromotionToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             deletepromotionToolStripMenuItem.Name = "deletepromotionToolStripMenuItem";
-            deletepromotionToolStripMenuItem.Size = new Size(143, 24);
+            deletepromotionToolStripMenuItem.Size = new Size(143, 20);
             deletepromotionToolStripMenuItem.Text = "Видалити пропозицію";
             deletepromotionToolStripMenuItem.Click += deletepromotionToolStripMenuItem_Click;
             // 
@@ -115,27 +115,27 @@
             файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { acctivepromoToolStripMenuItem, deletepromoToolStripMenuItem });
             файлToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            файлToolStripMenuItem.Size = new Size(50, 24);
+            файлToolStripMenuItem.Size = new Size(50, 20);
             файлToolStripMenuItem.Text = "Файл";
             // 
             // acctivepromoToolStripMenuItem
             // 
             acctivepromoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { saveacctivepromoToolStripMenuItem, loadacctivepromoToolStripMenuItem });
             acctivepromoToolStripMenuItem.Name = "acctivepromoToolStripMenuItem";
-            acctivepromoToolStripMenuItem.Size = new Size(224, 26);
+            acctivepromoToolStripMenuItem.Size = new Size(202, 26);
             acctivepromoToolStripMenuItem.Text = "Активні промокоди";
             // 
             // saveacctivepromoToolStripMenuItem
             // 
             saveacctivepromoToolStripMenuItem.Name = "saveacctivepromoToolStripMenuItem";
-            saveacctivepromoToolStripMenuItem.Size = new Size(224, 26);
+            saveacctivepromoToolStripMenuItem.Size = new Size(159, 26);
             saveacctivepromoToolStripMenuItem.Text = "Зберегти";
             saveacctivepromoToolStripMenuItem.Click += зберегтиToolStripMenuItem_Click;
             // 
             // loadacctivepromoToolStripMenuItem
             // 
             loadacctivepromoToolStripMenuItem.Name = "loadacctivepromoToolStripMenuItem";
-            loadacctivepromoToolStripMenuItem.Size = new Size(224, 26);
+            loadacctivepromoToolStripMenuItem.Size = new Size(159, 26);
             loadacctivepromoToolStripMenuItem.Text = "Завантажити";
             loadacctivepromoToolStripMenuItem.Click += завантажитиToolStripMenuItem_Click;
             // 
@@ -143,20 +143,20 @@
             // 
             deletepromoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { savedeleteacctionToolStripMenuItem1, loaddeletacctionToolStripMenuItem1 });
             deletepromoToolStripMenuItem.Name = "deletepromoToolStripMenuItem";
-            deletepromoToolStripMenuItem.Size = new Size(224, 26);
+            deletepromoToolStripMenuItem.Size = new Size(202, 26);
             deletepromoToolStripMenuItem.Text = "Видалені промокоди";
             // 
             // savedeleteacctionToolStripMenuItem1
             // 
             savedeleteacctionToolStripMenuItem1.Name = "savedeleteacctionToolStripMenuItem1";
-            savedeleteacctionToolStripMenuItem1.Size = new Size(224, 26);
+            savedeleteacctionToolStripMenuItem1.Size = new Size(159, 26);
             savedeleteacctionToolStripMenuItem1.Text = "Зберегти";
             savedeleteacctionToolStripMenuItem1.Click += зберегтиToolStripMenuItem1_Click;
             // 
             // loaddeletacctionToolStripMenuItem1
             // 
             loaddeletacctionToolStripMenuItem1.Name = "loaddeletacctionToolStripMenuItem1";
-            loaddeletacctionToolStripMenuItem1.Size = new Size(224, 26);
+            loaddeletacctionToolStripMenuItem1.Size = new Size(159, 26);
             loaddeletacctionToolStripMenuItem1.Text = "Завантажити";
             loaddeletacctionToolStripMenuItem1.Click += завантадитиToolStripMenuItem1_Click;
             // 
@@ -164,7 +164,7 @@
             // 
             givelistToolStripMenuItem.Font = new Font("Times New Roman", 7.8F);
             givelistToolStripMenuItem.Name = "givelistToolStripMenuItem";
-            givelistToolStripMenuItem.Size = new Size(118, 24);
+            givelistToolStripMenuItem.Size = new Size(118, 20);
             givelistToolStripMenuItem.Text = "Отримати списки";
             // 
             // button_log_exit
@@ -190,6 +190,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "FileManagePage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FileManagePage";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

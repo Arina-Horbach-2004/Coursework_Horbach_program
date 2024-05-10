@@ -33,6 +33,10 @@ namespace Coursework_Horbach_program__Form
         {
             string category = comboBox_category.Text;
             string keywords = textBox_word.Text;
+            if (string.IsNullOrWhiteSpace(category) && string.IsNullOrWhiteSpace(keywords))
+            {
+                MessageBox.Show("Будь ласка, введіть інформацію для пошуку.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } 
 
             Admin admin = new Admin("", "");
             var listPromotions = admin.GetValidPromotions();
@@ -62,6 +66,7 @@ namespace Coursework_Horbach_program__Form
 
                     labelDescription.Text = promotion.Description;
                     labelDescription.Location = new Point(176, labelDescriptionY);
+                    labelDescription.AutoSize = true;
                     labelDescription.Width = 67;
                     labelDescription.Height = 26;
                     panel_acction.Controls.Add(labelDescription);
@@ -78,7 +83,6 @@ namespace Coursework_Horbach_program__Form
                     pictureBoxY += 100;
                     labelDescriptionY += 95;
                     buttonGoToActionY += 94;
-                    ClearPromotionFields();
                 }
 
             }
@@ -107,6 +111,7 @@ namespace Coursework_Horbach_program__Form
 
                     labelDescription.Text = promotion.Description;
                     labelDescription.Location = new Point(176, labelDescriptionY);
+                    labelDescription.AutoSize = true;
                     labelDescription.Width = 67;
                     labelDescription.Height = 26;
                     panel_acction.Controls.Add(labelDescription);
@@ -122,18 +127,9 @@ namespace Coursework_Horbach_program__Form
                     pictureBoxY += 100;
                     labelDescriptionY += 95;
                     buttonGoToActionY += 94;
-                    ClearPromotionFields();
                 }
             }
 
-        }
-
-        // Метод для очищення полів для введення промокодів
-        private void ClearPromotionFields()
-        {
-
-            comboBox_category.SelectedIndex = -1;
-            textBox_word.Text = "";
         }
 
         // Метод, що відповідає за обробку події натискання кнопки "До акції"

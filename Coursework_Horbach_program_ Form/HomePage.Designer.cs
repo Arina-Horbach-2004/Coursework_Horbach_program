@@ -98,6 +98,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "HomePage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "HomePage";
             Load += HomePage_Load;
             menuStrip1.ResumeLayout(false);

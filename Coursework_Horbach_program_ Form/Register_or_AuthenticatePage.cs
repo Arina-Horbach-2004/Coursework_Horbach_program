@@ -153,12 +153,16 @@ namespace Coursework_Horbach_program__Form
         private void radioButton_register_CheckedChanged(object sender, EventArgs e)
         {
             label_title.Text = "Реєстрація";
+
+            button_log.Text = "Зареєструватися";
         }
 
         // Обробник події, що викликається при зміні вибору режиму "Автентифікація"
         private void radioButton_authenticate_CheckedChanged(object sender, EventArgs e)
         {
             label_title.Text = "Вхід";
+            button_log.Text = "Вхід";
         }
+
     }
 }

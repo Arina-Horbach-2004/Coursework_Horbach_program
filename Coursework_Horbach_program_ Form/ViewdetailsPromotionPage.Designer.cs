@@ -243,6 +243,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "ViewdetailsPromotionPage";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ViewdetailsPromotionPage";
             Load += ViewdetailsPromotionPage_Load;
             menuStrip1.ResumeLayout(false);
