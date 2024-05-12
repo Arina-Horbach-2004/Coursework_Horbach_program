@@ -100,7 +100,7 @@ namespace Coursework_Horbach_program__Form
         {
             DeletePromotionPage delete = new DeletePromotionPage();
             delete.Show();
-            delete.Hide();
+            this.Hide();
         }
 
         // Метод виходу з системи, який викликається при натисканні кнопки "Вийти"
