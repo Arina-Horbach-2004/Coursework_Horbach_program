@@ -60,8 +60,10 @@
             // listBox_result
             // 
             listBox_result.FormattingEnabled = true;
+            listBox_result.HorizontalScrollbar = true;
             listBox_result.Location = new Point(12, 82);
             listBox_result.Name = "listBox_result";
+            listBox_result.ScrollAlwaysVisible = true;
             listBox_result.Size = new Size(776, 344);
             listBox_result.TabIndex = 1;
             // 
